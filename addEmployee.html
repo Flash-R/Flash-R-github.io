@@ -18,8 +18,7 @@
     <link href="assets/css/icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-
+    <link rel="stylesheet" href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css">
     <!-- loader-->
     <link href="assets/css/pace.min.css" rel="stylesheet" />
 
@@ -450,40 +449,190 @@
 
         <!--start content-->
         <main class="page-content">
+            <h4>Employees</h4>
             <form action="" class="form">
-                <h4>Add bus</h4>
                 <div class="row">
                     <div class="col-12 col-lg-6 d-flex">
                         <div class="card radius-10 w-100">
                             <div class="card-body">
-                                <label for="name">Bus Name</label>
-                                <input type="text" name="busName" class="form-control" placeholder="Bus Name">
-                                <label for="name">Plate Number</label>
-                                <input type="text" name="plateNumber" class="form-control" placeholder="Number Plate">
-                                <label for="name">Total Seats</label>
-                                <input type="number" name="seats" class="form-control" placeholder="Seats">
-                                <label for="Manufacturer">Manufacturer</label>
-                                <input type="text" name="Manufacturer" class="form-control">
-                                <label for="operationDate">Operation Start Date</label>
-                                <input type="date" name="operationDate" class="form-control">
+                                <label for="name">Name</label>
+                                <input type="text" name="Name" class="form-control" placeholder="Bus Name">
+                                <label for="email">Email</label>
+                                <input type="email" name="Email" class="form-control" placeholder="Number Plate">
+                                <label for="phone">Phone Number</label>
+                                <input type="number" name="Phone" class="form-control" placeholder="Seats">
+                                <label for="department">Department</label>
+                                <select class="form-control">
+                                    <option selected>Choose..</option>
+                                    <option value="drivers">Drivers</option>
+                                    <option value="maintainance">Maintainance</option>
+                                </select>
+                                <label for="role">Role</label>
+                                <input type="text" name="role" class="form-control">
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 d-flex">
                         <div class="card radius-10 w-100">
                             <div class="card-body">
-                                <label for="details">Other Details</label>
-                                <textarea name="details" id="" cols="30" rows="10" class="form-control"></textarea>
-                                <a href="#" class=" mt-3 btn btn-primary">Add bus</a>
+                                <label for="nin">NIN</label>
+                                <input type="text" name="nin" class="form-control" placeholder="NIN">
+                                <label for="nok">Next of Kin</label>
+                                <input type="text" name="nok" class="form-control" placeholder="Next of Kin">
+                                <label for="phone">NoK Phone</label>
+                                <input type="number" name="nokPhone" class="form-control" placeholder="Next of Kin Phone Number">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" class="form-control" placeholder="Physical Address">
+                                <button class="btn btn-primary mt-3"> Add Employee </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
             <!--end row-->
-
-
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5>All Employees</h5>
+                        <div class="table-responsive mt-2">
+                            <table class="table align-middle mb-0">
+                              <thead class="table-light">
+                                <tr>
+                                  <th>#ID</th>
+                                  <th>Activity</th>
+                                  <th>By</th>
+                                  <th>Price</th>
+                                  <th>Date</th>
+                                  <th>Actions</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>#89742</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                      <div class="product-info">
+                                        <h6 class="product-name mb-1">Paid PSV</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>Accountant</td>
+                                  <td>UGX  214</td>
+                                  <td>Apr 8, 2021</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                      <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><i class="bi bi-eye-fill"></i></a>
+                                      <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
+                                      <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>#68570</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                      <div class="product-info">
+                                        <h6 class="product-name mb-1">Daily Allowances</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>General Manager</td>
+                                  <td>UGX  185</td>
+                                  <td>Apr 9, 2021</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                      <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><i class="bi bi-eye-fill"></i></a>
+                                      <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
+                                      <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>#38567</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                      <div class="product-info">
+                                        <h6 class="product-name mb-1">DSTV Subscription</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>Accountant</td>
+                                  <td>UGX  356</td>
+                                  <td>Apr 10, 2021</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                      <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><i class="bi bi-eye-fill"></i></a>
+                                      <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
+                                      <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>#48572</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                      <div class="product-info">
+                                        <h6 class="product-name mb-1">Maintenance</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>Accountant</td>
+                                  <td>UGX  149</td>
+                                  <td>Apr 11, 2021</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                      <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><i class="bi bi-eye-fill"></i></a>
+                                      <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
+                                      <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>#96857</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                      <div class="product-info">
+                                        <h6 class="product-name mb-1">Printing Papers</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>General Manager</td>
+                                  <td>UGX  199</td>
+                                  <td>Apr 15, 2021</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                      <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><i class="bi bi-eye-fill"></i></a>
+                                      <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
+                                      <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>#96857</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                      <div class="product-info">
+                                        <h6 class="product-name mb-1">Internet Subscription</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>Accountant</td>
+                                  <td>UGX  699</td>
+                                  <td>Apr 18, 2021</td>
+                                  <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                      <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="View detail" aria-label="Views"><i class="bi bi-eye-fill"></i></a>
+                                      <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit info" aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
+                                      <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <!--end page main-->
 
@@ -570,11 +719,12 @@
     <!--end wrapper-->
 
 
-    <!-- Bootstrap bundle JS -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!--plugins-->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
     <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
     <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
     <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
@@ -587,7 +737,9 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/index2.js"></script>
     <script>
-        new PerfectScrollbar(".best-product")
+        new PerfectScrollbar(".best-product");
+        new DataTable("#Exp");
+        // $("#example").DataTable();
     </script>
 
 
