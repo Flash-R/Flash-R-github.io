@@ -456,17 +456,43 @@
                         <form action="" class="form">
                             <div class="card ">
                                 <div class="card-body">
-                                    <label for="name">Name</label>
+                                    <label for="name">Title</label>
+                                    <input type="text" class="form-control" placeholder="Meeting Title">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="date">Date</label>
+                                            <input type="date" name="date" id="" class="form-control">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="time">Time</label>
+                                            <input type="time" name="" id="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <label for="department">Department</label>
                                     <select name="" id="" class="form-control">
                                         <option selected>Choose...</option>
-                                        <option value="1">Tumwesigye Ronnie</option>
+                                        <option value="0">All Departments</option>
+                                        <option value="1">Drivers</option>
+                                        <option value="2">Maintainance</option>
                                     </select>
-                                    <label for="station">Station</label>
-                                    <input type="text" name="station" class="form-control" placeholder="Station/Branch">
-                                    <label for="days">Number of Days</label>
-                                    <input type="number" name="days" class="form-control" placeholder="Number of Days">
-                                    <label for="startDate">Start Date</label>
-                                    <input type="date" name="startDate" class="form-control">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="mode">Mode</label>
+                                            <select name="" id="" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option value="1">Online</option>
+                                                <option value="2">Physical</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="department">Venue/Link</label>
+                                            <input type="text" name="" id="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <label for="details">Meeting Details</label>
+                                    <textarea name="" id="" cols="30" rows="10" class="form-control">
+
+                                    </textarea>
                                     <a href="#" class="btn btn-success mt-3">Accept Leave</a>
                                 </div>
                             </div>
@@ -513,6 +539,54 @@
                                 </table>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Department</th>
+                                    <th>Role</th>
+                                    <th>Days Requested</th>
+                                    <th>From date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tum Ronnie</td>
+                                    <td>Drivers</td>
+                                    <td>Conductor</td>
+                                    <td>10 days</td>
+                                    <td>25/7/2021</td>
+                                    <td>
+                                        <div class="badge bg-primary">Pending</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tum Ronnie</td>
+                                    <td>Drivers</td>
+                                    <td>Luggage Operator</td>
+                                    <td>10 days</td>
+                                    <td>25/7/2021</td>
+                                    <td>
+                                        <div class="badge bg-success">Approved</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tum Ronnie</td>
+                                    <td>Drivers</td>
+                                    <td>Bus Drivers</td>
+                                    <td>10 days</td>
+                                    <td>25/7/2021</td>
+                                    <td>
+                                        <div class="badge bg-danger">Declined</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
